@@ -1,61 +1,115 @@
 <!DOCTYPE html>
 <html>
 <head>
-   <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <title>repl.it</title>
-    <link href="style.css" rel="stylesheet" type="text/css" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Kaitlyn Midori Portfolio</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
-    
+
 <body>
+
   <header>
-      <!-- <a href= "index.html id="logo"> -->
-      <h1> Kaitlyn Midori </h1>
-      <h2> Developer of the Webs </h2>
-    <!-- </a> -->
-      <!-- <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-      </nav> -->
-    </header>
-  <div class="hero-image">
-  <div class="hero-text">
-
-    <main>
-<!-- <div class="hero-image">
-  <div class="hero-text"> -->
-      <h3>Welcome All.</h3>
-      <h4>I'm Kaitlyn.</h4> 
-      <section>
-        <p>A 30-something year old Web Developer from Oakland, California.</p>
-      <p>A few tid-bits about me:</p>
-      <ul>
-        <li>I'm probably wrestling my dogs right now</li>
-        <li>Soup makes me happy</li>
-        <li>Creativity runs through my veins</li>
+    <div class="logo">Kaitlyn Midori</div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
-      </section>
-      <section>
-        <p> blah blah blah</p>
-      </section>
+    </nav>
+  </header>
 
-<hr>
+<main>
 
-    </main>
-  </div>
-  </div>
+<!-- introduction -->
+  <section>
+    <div class="group">
+      <div class="item">
+        <img src="images/selfie.png" alt="Kaitlyn Midori Profile Selfie" class="image-enhanced">
+      </div>
+      <div class="item">
+        <h1>Hi. I'm Kaitlyn.</h1>
+        <p>A 30-something year old from Oakland, California. I'm a Web Developer, with a passion for the magic of technology, and user experience.</p>
+      </div>
+    </div>
+  </section>
 
+<!-- About Me -->
+  <section class="dark-background">
+    <h2>About Me.</h2>
+    <div class="group">
+      <div class="item item-double">
+        <p>Born and raised in the Bay Area, I graduated from San Francisco State with an International Business Degree. I went straight into tech after school and haven't looked back.</p>
+
+        <p>I'm a firm beliver that two heads are better then one. Collaboration leads to powerful discoveries.  I strive to be a part of something bigger then me, work on a team of contributors of talented individuals, all complementing in unique ways.</p>
+
+        <p>I take pride on thinking out of the box and challenging the idea of innovation. I support clients with their programming needs by bringing fresh concepts that spark user inspiration.  I am incredibly motivated by challenge and don't discriminate new job requests.</p>
+
+        <p>However, I don't believe in living to work.  I am a proud dog mama of two, whom I love to expore with.  We are typically beach-bumming it, taking a road trip, or hiking.</p>
+      </div>
+      <div class="item">
+<img src="images/bogie.jpeg" alt="Bogie Selfie" class="image-enhanced">
+    </div>
+  </section>
+
+<!-- Portfolio -->
+    <section>
+      <h2>Portfolio</h2>
+      <div class="group">
+        <div class="item">
+          <img src="images/comingSoon.jpeg" alt="Project Placeholder" class="rounded">
+          <h3>Project Placeholder</h3>
+          <p>Upon completion, I'll provide the following details:.</p>
+          <ol>
+            <li>Sample Project Listing</li>
+            <li>Project Title</li>
+            <li>Project Purpose</li>
+            <li>Skills Used</li>
+            <li>Project GitHub Link</li>
+            <li>Project Live Site Link</li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+<!-- Contact -->
+
+    <section class="dark-background">
+      <h2>Contact</h2>
+      <div class="group">
+        <div class="item item-double">
+          <form action="#" method="POST">
+            <label for="user-name">Name:</label>
+            <input id="user-name" type="text" name="name">
+
+            <label for="user-email">Email:</label>
+            <input id="user-email" type="text" name="email">
+
+            <label for="user-message">Message:</label> <textarea id="user-message" name="message"></textarea>
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+        <div class="item item-double">
+          <p>Phone #: <a href="tel:555-555-5555">415-509-6490</a></p>
+          <p>Email: <a href="mailto:katyluhoo@yahoo.com? subject=You%20Are%20Hired!!">katyluhoo@yahoo.com</a></p>
+          <p>LinkedIn: <a href="http://www.linkedin.com/in/kaitlyn-shepardson-1623a9117" target="_blank"> Kaitlyn's LinkedIn</a></p>
+          <p>GitHub: <a href="https://www.github.com/kaitlynMidori">Kaitlyn's GitHub</a></p>
+              
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d201877.73430325926!2d-122.37538914908166!3d37.758634650214724!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80857d8b28aaed03%3A0x71b415d535759367!2sOakland%2C%20CA!5e0!3m2!1sen!2sus!4v1602104516145!5m2!1sen!2sus" width="600" height="450" allowfullscreen=""></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
 
 <footer>
-      <p> Contact Kaitlyn</p>
-      <ol>
-        <li><a href="mailto:katyluhoo@yahoo.com"> Email</a></li>
-        <!-- mailto opens mail and places email link in "to" field -->
-        <li><a href="http://www.linkedin.com/in/kaitlyn-shepardson-1623a9117" target="_blank"> LinkedIn</a></li>
-        </ol>
-        <!-- target opens link in new page -->
-    </footer>
+  <p>© Kaitlyn Midori</p>
+</footer>
 
-</body>
+
+    <script src="script.js"></script>
+  </body>
 </html>
