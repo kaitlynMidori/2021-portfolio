@@ -9,8 +9,8 @@ body {
   margin: auto;
   font-family: 'Montserrat', sans-serif;
   padding-bottom: 78px;
-  /* border: solid;
-  border-color: lightcoral; */
+  border: solid;
+  border-color: lightcoral;
 }
 
 
@@ -55,7 +55,7 @@ header ul li a {
 header {
   background-color: rgb(238, 228, 211);
   /* margin-bottom: 30px; */
-  /* border: solid; */
+  border: solid;
   padding-bottom: 10px;
   
 }
@@ -69,8 +69,8 @@ main {
   justify-content: center;
   justify-items: center;
   text-align: center;
-  /* border: solid;
-  border-color: turquoise; */
+  border: solid;
+  border-color: turquoise;
 }
 
 footer {
@@ -78,8 +78,8 @@ footer {
   background-color: rgb(238, 228, 211);
   bottom: 0;
   width: 100%;
-  /* border: solid;
-  border-color: red; */
+  border: solid;
+  border-color: red;
 }
 
 /****************** Typography ******************/

@@ -55,7 +55,7 @@ header ul li a {
 header {
   background-color: rgb(238, 228, 211);
   /* margin-bottom: 30px; */
-  /* border: solid; */
+  border: solid;
   padding-bottom: 10px;
   
 }
@@ -79,8 +79,8 @@ footer {
   bottom: 0;
   width: 100%;
   /* border: solid;
-  border-color: red; */
-}
+  border-color: red;
+} */
 
 /****************** Typography ******************/
 h1 {

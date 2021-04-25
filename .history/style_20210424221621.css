@@ -55,7 +55,7 @@ header ul li a {
 header {
   background-color: rgb(238, 228, 211);
   /* margin-bottom: 30px; */
-  /* border: solid; */
+  border: solid;
   padding-bottom: 10px;
   
 }
