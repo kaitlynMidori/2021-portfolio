@@ -199,12 +199,11 @@ img.image-enhanced {
   margin: 0;
   padding: 0;
   object-fit: fill;
-  -webkit-mask-image: -webkit-radial-gradient(white, black);
-  mask-image: -webkit-radial-gradient(white, black);;
+
   -webkit-border-radius: 8%;
-  -moz-border-radius: 8%;
-  border-radius: 8%;
-  -khtml-border-radius: 8%;
+    -moz-border-radius: 8%;
+    border-radius: 8%;
+    -khtml-border-radius: 8%;
   border-radius: 8px;
   display: flex;
   border-collapse: collapse;
