@@ -287,12 +287,12 @@ img.image-enhanced {
   margin-bottom: 20px;
 }
 
-.card-eight {
-  background-image: url(./images/parks.jpg);
+.card-three {
+  background-image: url(./images/makeup.png);
   opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
-  background-position: center;
+  background-position: bottom;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
@@ -301,29 +301,7 @@ img.image-enhanced {
   border: transparent;
   border-radius: 10px;
   margin-bottom: 20px;
-  color: white;
-}
-
-/* .card-three > .card-body {
-  border: solid;
-  padding-top: 140px;
-} */
-
-.card-six {
-  background-image: url(./images/leaf.jpg);
-  opacity: .85;
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 5px;
-  max-width: 15rem;
-  height: 20rem;
-  border: transparent;
-  border-radius: 10px;
-  margin-bottom: 20px;
-  color: white;
+  color: black;
 }
 
 .card-four{
@@ -359,12 +337,12 @@ img.image-enhanced {
   margin-bottom: 20px;
 }
 
-.card-three {
-  background-image: url(./images/makeup.png);
+.card-six {
+  background-image: url(./images/leaf.jpg);
   opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
-  background-position: bottom;
+  background-position: top;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
@@ -373,7 +351,7 @@ img.image-enhanced {
   border: transparent;
   border-radius: 10px;
   margin-bottom: 20px;
-  color: black;
+  color: white;
 }
 
 .card-seven {
@@ -382,6 +360,23 @@ img.image-enhanced {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card-eight {
+  background-image: url(./images/parks.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
   display: flex;
   flex-wrap: wrap;
   padding: 5px;
