@@ -1,0 +1,513 @@
+/***************** General ******************/
+
+
+body {
+  
+  min-height: 100%;
+  background-color: rgb(238, 228, 211);
+  color: rgb(17, 17, 17);
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  padding-bottom: 78px;
+  /* border: solid;
+  border-color: lightcoral; */
+}
+
+
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 70px;
+  color: rgb(17, 17, 17);
+  text-align: center;
+  letter-spacing: -2;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+/************** navigation ***************/
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 14px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header ul li a {
+  color: rgb(17, 17, 17);
+  text-decoration: none;
+  padding: 0 20px 0 0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+/************* Primary Groups ****************/
+header {
+  background-color: rgb(238, 228, 211);
+  /* margin-bottom: 30px; */
+  /* border: solid; */
+  padding-bottom: 10px;
+}
+
+main {
+  margin: auto;
+  /* margin-bottom: 100px;
+  margin-right: 5px; */
+  /* border: solid;
+  border-color: brown; */
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  /* border: solid;
+  border-color: turquoise; */
+}
+
+footer {
+  position: fixed;
+  background-color: rgb(238, 228, 211);
+  bottom: 0;
+  width: 100%;
+  /* border: solid;
+  border-color: red; */
+}
+
+/****************** Typography ******************/
+h1 {
+  font-size: 28px;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 26px;
+  color: rgb(17, 17, 17);
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  font-weight: 400;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 430;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  line-height: 1.3em;
+  margin-bottom: 0;
+}
+
+main a {
+  font-weight: 700;
+  text-decoration: none;
+}
+
+main a:link{
+  color: black;
+  text-decoration: underline;
+}
+
+/* .card-container a:link {
+  border: solid thin;
+  border-radius: 1rem;
+  color: white;
+  background-color: black;
+  padding: 5px;
+  justify-content: flex-end;
+} */
+main a:visited{
+  color: blue;
+}
+/* main main a:hover{color: greenyellow;} */
+/* a:active{color:  rgb(143, 156, 33);} */
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer p {
+  font-size: 15px;
+  color: rgb(17, 17, 17);
+  text-align: center;
+  padding: 20px;
+}
+
+footer h2 {
+  color: black;
+}
+
+img.image-enhanced {
+  max-width: 350px;
+  border-radius: 8px;
+}
+
+.item-double {
+  color: rgb(17, 17, 17);
+  flex: 2;
+}
+
+/* Desktop groups/items */
+@media all and (min-width: 600px){
+  section {
+    padding: 0%;
+  }
+  .group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+/* ***********  home ************** */
+.home-img {
+  max-width: 300px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.home-container {
+  min-width: 375px;
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* border: solid;
+  border-color: green; */
+  height: 100%;
+  max-width: 50%;
+  margin: auto;
+  /* padding: 60px 50px 20px 60px; */
+  /* background-color: rgb(77, 90, 42, .3) */
+}
+
+.home-item {
+  text-align: left;
+  /* border: solid; */
+}
+
+/* ************ about *************** */
+
+.about-video {
+  max-width: 640px;
+  max-height: 340px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  object-fit: fill;
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  mask-image: -webkit-radial-gradient(white, black);;
+  -webkit-border-radius: 8%;
+  -moz-border-radius: 8%;
+  border-radius: 8%;
+  -khtml-border-radius: 8%;
+  border-radius: 8px;
+  display: flex;
+  border-collapse: collapse;
+}
+
+.about-container {
+  overflow: scroll;
+  align-items: center; 
+  justify-content: center;
+  flex-direction: column-reverse;
+  margin: auto;
+  padding: 15px;
+  display: flex;
+  text-align: center;
+  flex-wrap: wrap;
+  max-width: 50%;
+}
+
+.about-item {
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+/**************** projects ****************/
+
+.card-container {
+  max-width: 1200px;
+  min-width: 370px;
+  margin: auto;
+  /* margin-bottom: 10px;
+  margin-top: 20px; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* border: solid; */
+  text-align: center;
+  padding-top: 10px;
+}
+
+.card-body {
+  position: relative;
+  text-align: center;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+}
+
+.row-one {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-one {
+  background-image: url(./images/brews.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+button :hover {
+  border-color: var(--hover);
+  color: #fff;
+  color-adjust: color, 45deg;
+}
+
+button :focus {
+  border-color: var(--hover);
+  color: #fff;
+}
+
+button {
+  color: var(--color);
+  transition: .25s;
+  background: none;
+  border: 2px solid;
+  font: inherit;
+  line-height: 1;
+  margin: 0.5em;
+  padding: 1em 2em;
+}
+
+
+
+.card-two {
+  background-image: url(./images/books.png);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-three {
+  background-image: url(./images/makeup.png);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: bottom;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.card-four{
+  background-image: url(./images/cart.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: bottom;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+.card-five {
+  background-image: url(./images/host.png);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.card-six {
+  background-image: url(./images/leaf.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card-seven {
+  background-image: url(./images/note.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.card-eight {
+  background-image: url(./images/parks.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+/* ************** Resume *************** */
+.resume-pdf {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+  margin: auto;
+}
+
+.resume-container {
+  max-width: 100%;
+  height: 100%;
+  /* border: solid;
+  border-color: yellow; */
+  align-items: center; 
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+
+/* ***************** Contact ****************** */
+.contact-container {
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  /* border: solid;
+  border-color: lightgreen; */
+  padding: 5px;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+  
+}
+
+.contact-form {
+  display: flex;
+  max-width: 50%;
+  height: 100%;
+  margin: auto;
+  border: solid;
+  border-color: transparent;
+}
+
+.contact-bar {
+  width: 100%;
+  overflow: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.contact-bar a {
+  display: inline-block;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 15%;
+  text-align: center;
+  padding: 12px 0;
+  color: black;
+  transition: all 0.3s ease;
+  font-size: 34px;
+}
+
+.contact-bar a:hover {
+  background-color: white;
+}
+
+.location {
+  width: 100%;
+  margin-top: 20px;
+}
+/****** Contact Form Design ******/
+
+
+form input, form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+  margin: auto;
+}
+
+form textarea {
+  height: 250px;
+}
