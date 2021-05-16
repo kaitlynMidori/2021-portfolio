@@ -108,8 +108,6 @@ h4 {
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 p {
@@ -248,8 +246,6 @@ img.image-enhanced {
 
 .flip-card p {
   font-size: 14px;
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 .flip-card .btn {
@@ -369,6 +365,7 @@ img.image-enhanced {
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+  
 }
 
 /* Style the front side (fallback if image is missing) */
@@ -414,6 +411,8 @@ img.image-enhanced {
   background-color: #fefcf0;
   color: #112a46;
   transform: rotateY(180deg);
+  border: solid;
+  margin: auto;
 }
 
 .card-three-front, .card-three-back {
