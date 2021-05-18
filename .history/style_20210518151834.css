@@ -352,7 +352,6 @@ img.image-enhanced {
   height: 100%;
   text-align: center;
   transition: transform 0.8s;
-  -webkit-transition: transform 0.8s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
 }
