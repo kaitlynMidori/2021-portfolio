@@ -373,16 +373,10 @@ img.image-enhanced {
   -webkit-transform: rotateY(180deg);
 }
 
-.flip-card:hover, .flip-card-inner.hover_effect {
+.flip-card:hover .flip-card-inner:hover {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
-
-.hover {
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;        
-  }
 
 /* Position the front and back side */
 .card-one-front, .card-one-back {

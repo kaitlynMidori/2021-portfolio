@@ -373,16 +373,11 @@ img.image-enhanced {
   -webkit-transform: rotateY(180deg);
 }
 
-.flip-card:hover, .flip-card-inner.hover_effect {
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
-
-.hover {
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;        
-  }
 
 /* Position the front and back side */
 .card-one-front, .card-one-back {

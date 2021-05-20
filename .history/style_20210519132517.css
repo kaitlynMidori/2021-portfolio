@@ -105,6 +105,8 @@ h3 {
 }
 
 h4 {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
   font-size: 18px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
@@ -113,6 +115,8 @@ h4 {
 }
 
 p {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 1.3em;
@@ -342,8 +346,8 @@ img.image-enhanced {
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-  backface-visibility: hidden;
   -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
   border: solid;
   border-color: transparent;
   background-color: transparent;
@@ -355,6 +359,8 @@ img.image-enhanced {
 
 /* This container is needed to position the front and back side */
 .flip-card-inner {
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
   position: relative;
   width: 100%;
   height: 100%;
@@ -363,8 +369,7 @@ img.image-enhanced {
   -webkit-transition: transform 0.8s;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden; /* Safari */
+  
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -373,24 +378,18 @@ img.image-enhanced {
   -webkit-transform: rotateY(180deg);
 }
 
-.flip-card:hover, .flip-card-inner.hover_effect {
+.flip-card:hover .flip-card {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
-
-.hover {
-  user-select: none;
-  -webkit-user-select: none;
-  -webkit-touch-callout: none;        
-  }
 
 /* Position the front and back side */
 .card-one-front, .card-one-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  backface-visibility: hidden;
   -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -402,8 +401,8 @@ img.image-enhanced {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
-  backface-visibility: hidden;
   -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 /* Style the back side */
@@ -412,8 +411,8 @@ img.image-enhanced {
   color: #112a46;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-  backface-visibility: hidden;
   -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
 }
 
 .card-two-front, .card-two-back {
