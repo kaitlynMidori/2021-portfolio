@@ -208,8 +208,15 @@
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
           <script>
-            $(".flip-card").on("touchstart", function() {
-              $(this).toggleClass("hover");
+            $(function() {
+              $("#flip-card-inner").click(function() {
+                $(this), toggleClass("flipped")
+              });
+            });
+            $(function() {
+              $(".btn").on("click", function() {
+                $("#flip-card-inner").toggleClass("flipped");
+              });
             });
           </script>
   </body>

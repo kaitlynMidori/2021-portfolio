@@ -361,7 +361,6 @@ img.image-enhanced {
 }
 
 .flip-card.hover .flip-card-inner {
-  transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
 
@@ -391,7 +390,6 @@ img.image-enhanced {
 
 /* Position the front and back side */
 .card-one-front, .card-one-back {
- 
   position: absolute;
   width: 100%;
   height: 100%;
