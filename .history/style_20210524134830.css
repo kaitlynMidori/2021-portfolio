@@ -246,6 +246,12 @@ img.image-enhanced {
 
 /**************** projects ****************/
 
+/* @media (pointer: course) and (hover: none) {
+  .flip-card-inner {
+    font-size: inherit;
+  }
+} */
+
 .flip-card p {
   font-size: 14px;
   padding-left: 4px;

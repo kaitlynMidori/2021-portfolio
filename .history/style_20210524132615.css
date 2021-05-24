@@ -246,6 +246,12 @@ img.image-enhanced {
 
 /**************** projects ****************/
 
+/* @media (pointer: course) and (hover: none) {
+  .flip-card-inner {
+    font-size: inherit;
+  }
+} */
+
 .flip-card p {
   font-size: 14px;
   padding-left: 4px;
@@ -347,7 +353,6 @@ img.image-enhanced {
   width: 15rem;
   height: 20rem;
   margin-bottom: 20px;
-  /* -webkit-perspective: 1000px; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 

@@ -216,7 +216,7 @@ img.image-enhanced {
   -webkit-mask-image: -webkit-radial-gradient(white, black);
   mask-image: -webkit-radial-gradient(white, black);;
   -webkit-border-radius: 8%;
-  -moz-border-radius: 8%;
+  /* -moz-border-radius: 8%; */
   border-radius: 8%;
   -khtml-border-radius: 8%;
   border-radius: 8px;
@@ -245,6 +245,12 @@ img.image-enhanced {
 }
 
 /**************** projects ****************/
+
+/* @media (pointer: course) and (hover: none) {
+  .flip-card-inner {
+    font-size: inherit;
+  }
+} */
 
 .flip-card p {
   font-size: 14px;
@@ -318,7 +324,6 @@ img.image-enhanced {
   flex-wrap: wrap;
 }
 
-
 /* .card-one {
   background-image: url(./images/brews.jpg);
   opacity: .85;
@@ -338,7 +343,6 @@ img.image-enhanced {
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
 .flip-card {
-  -webkit-tap-highlight-color: rbga(0, 0, 0, 0);
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden; /* Safari */
   border: solid;
@@ -347,7 +351,6 @@ img.image-enhanced {
   width: 15rem;
   height: 20rem;
   margin-bottom: 20px;
-  /* -webkit-perspective: 1000px; */
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -363,18 +366,24 @@ img.image-enhanced {
   -webkit-transform-style: preserve-3d;
  transition-property: -webkit-transform;
  transition-duration: 1.5s;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  /* backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; Safari */
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
 .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
-  -webkit-transform: rotateY(180deg);
+  /* -webkit-transform: rotateY(180deg); */
 }
 
+/* .hover {
+  user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;        
+  } */
+
 /* Position the front and back side */
-.card-one-front, .card-one-back {
+.flip-card-front, .flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -385,32 +394,32 @@ img.image-enhanced {
 }
 
 /* Style the front side (fallback if image is missing) */
-.card-one-front {
+.flip-card-front {
   background-color: #bbb;
   background-image: url(./images/beer.jpg);
   opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  /* backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; Safari */
 }
 
 /* Style the back side */
-.card-one-back {
+.flip-card-back {
   background-color: #fefcf0;
   color: #112a46;
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  /* backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; Safari */
 }
 
 .card-two-front, .card-two-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
