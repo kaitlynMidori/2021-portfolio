@@ -362,7 +362,6 @@ img.image-enhanced {
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
  transition-property: -webkit-transform;
- -webkit-transition-property: -webkit-transform;
  transition-duration: 1.5s;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
