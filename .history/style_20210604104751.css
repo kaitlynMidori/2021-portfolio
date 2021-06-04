@@ -251,25 +251,30 @@ img.image-enhanced {
   }
 } */
 
-.flip-card .btn  {
-  text-align: center;
-  font-family: "League-Gothic", 'Courier';
-  font-weight: bold;
-  font-size: 50px;
-  text-transform: uppercase;
-  color: rgba(0,168, 255, 0.5);
-  text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
+.flip-card a {
+  color: var(--mainColor);
+  text-decoration: none;
 }
 
+@supports not(-webkit-text-stroke: 2px red) {
+  .flip-card a {
+    text-shadow:
+      3px 3px 0 var(--mainColor),
+      -1px -1px 0 var(--mainColor),
+      1px -1px 0 var(--mainColor),
+      -1px 1px 0 var(--mainColor),
+      1px 1px 0 var(--mainColor);
+  }
+}
 .flip-card p {
   font-size: 14px;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-/* .flip-card .btn {
-  background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
-  background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+.flip-card .btn {
+  /* background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%); */
+  /* background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%); */
   background-size: 500%;
   color: white;
   border: none;
@@ -283,7 +288,7 @@ img.image-enhanced {
   position: absolute;
   bottom: 20px;
   left: 35px;
-} */
+}
 
 /* .btn:hover {
   animation-name: gradient;

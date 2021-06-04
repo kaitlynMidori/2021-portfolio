@@ -251,16 +251,17 @@ img.image-enhanced {
   }
 } */
 
-.flip-card .btn  {
-  text-align: center;
-  font-family: "League-Gothic", 'Courier';
-  font-weight: bold;
-  font-size: 50px;
-  text-transform: uppercase;
-  color: rgba(0,168, 255, 0.5);
-  text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
+.flip-card .btn a {
+  color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
 }
 
+@supports not(-webkit-text-stroke: 2px red) {
+  .flip-card .btn a {
+    color: white;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}
 .flip-card p {
   font-size: 14px;
   padding-left: 4px;

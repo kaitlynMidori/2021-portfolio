@@ -251,23 +251,13 @@ img.image-enhanced {
   }
 } */
 
-.flip-card .btn  {
-  text-align: center;
-  font-family: "League-Gothic", 'Courier';
-  font-weight: bold;
-  font-size: 50px;
-  text-transform: uppercase;
-  color: rgba(0,168, 255, 0.5);
-  text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
-}
-
 .flip-card p {
   font-size: 14px;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-/* .flip-card .btn {
+.flip-card .btn {
   background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background-size: 500%;
@@ -283,9 +273,9 @@ img.image-enhanced {
   position: absolute;
   bottom: 20px;
   left: 35px;
-} */
+}
 
-/* .btn:hover {
+.btn:hover {
   animation-name: gradient;
   -webkit-animation-name: gradient;
   animation-duration: 2s;
@@ -305,7 +295,7 @@ img.image-enhanced {
   -webkit-animation-iteration-count: 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-} */
+}
 
 @keyframes gradient {
   0% {

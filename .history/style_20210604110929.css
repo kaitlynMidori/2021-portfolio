@@ -253,14 +253,17 @@ img.image-enhanced {
 
 .flip-card .btn  {
   text-align: center;
-  font-family: "League-Gothic", 'Courier';
-  font-weight: bold;
-  font-size: 50px;
+  font-family: "League-Gothic", 'Courier New', Courier, monospace;
+  font-size: 60px;
   text-transform: uppercase;
-  color: rgba(0,168, 255, 0.5);
-  text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
 }
 
+@supports not(-webkit-text-stroke: 2px red) {
+  .flip-card .btn  {
+    color: transparent;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  }
+}
 .flip-card p {
   font-size: 14px;
   padding-left: 4px;

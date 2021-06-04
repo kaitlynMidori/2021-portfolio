@@ -3,6 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>About</title>
         <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
@@ -30,6 +31,7 @@
         <h2>Projects</h2>
             <div class="card-container">
                 <div class="row-one">
+
                   <!-- <div class="col-sm-6">
                     <div class="card-one">
                       <div class="card-body">
@@ -105,15 +107,12 @@
                       </div> -->
                   <div class="flip-card">
                     <div class="flip-card-inner">
-                      <div class="card-one-front">
-                        <a href="https://search-brews.vercel.app/" class="btn btn-primary">Visit Website</a>
-
-                      </div>
+                      <div class="card-one-front"></div>
                       <div class="card-one-back">
                         <h4 class="card-title">Beer Me</h4>
                         <p class="card-text">Quench that thirst and search breweries by state using Open Brewery API</p>
                         
-                        <a href="https://search-brews.vercel.app/" class="btn btn-primary">Visit Website</a>
+                        <a href="https://search-brews.vercel.app/" class= "btn btn-primary">Visit Website</a>
                       </div>
                     </div>
                   </div>
@@ -124,7 +123,7 @@
                       <div class="card-two-back">
                         <h4 class="card-title">New York Times Full Stack</h4>
                     <p class="card-text">Search NYT Books API for best sellers, reviews, or  by author.</p>
-                    
+                   
                     <a href="https://github.com/kaitlynMidori/nyt-server" class="btn btn-primary">Visit GitHub Repo</a>
                       </div>
                     </div>
@@ -136,7 +135,7 @@
                       <div class="card-three-back">
                         <h4 class="card-title">Make Me Up</h4>
                     <p class="card-text">Filter through thousands of makeup products and watch makeup tutorials using Herokuapp Makeup API and Youtube Data API.</p>
-                    
+                    <br>
                     <a href="https://makeup-api.vercel.app/" class="btn btn-primary">Visit Website</a>
                       </div>
                     </div>
@@ -148,7 +147,7 @@
                       <div class="card-four-back">
                         <h4 class="card-title">ELF Computers</h4>
                     <p class="card-text">Customize computer specs and place in shopping cart.</p>
-                    
+                    <br>
                     <a href="https://laptop-customizer-rosy.vercel.app/" class="btn btn-primary">Visit Website</a>
                       </div>
                     </div>
@@ -160,7 +159,7 @@
                       <div class="card-five-back">
                         <h4 class="card-title">Jeopardy Full Stack</h4>
                     <p class="card-text">Play a solo, or multi-player game of Jeopardy.</p>
-                    
+                    <br>
                     <a href="https://github.com/kaitlynMidori/react-jeopardy-app" class="btn btn-primary">Visit GitHub Repo</a>
                       </div>
                     </div>
@@ -172,7 +171,7 @@
                       <div class="card-six-back">
                         <h4 class="card-title">Plant Life</h4>
                       <p class="card-text">Put your plant knowledge to the test.</p>
-                      
+                      <br>
                       <a href="https://gardening101.vercel.app/" class="btn btn-primary">Visit Website</a>
                       </div>
                     </div>
@@ -184,7 +183,7 @@
                       <div class="card-seven-back">
                         <h4 class="card-title">Noteful Full Stack</h4>
                     <p class="card-text">Stay organized, and create a note or folder.</p>
-                    
+                    <br>
                     <a href="https://noteful-client-v5.vercel.app/" class="btn btn-primary">Visit Website</a>
                       </div>
                     </div>
@@ -196,7 +195,7 @@
                       <div class="card-eight-back">
                         <h4 class="card-title">National Park Locator</h4>
                       <p class="card-text">Search National Parks by state using the National Park Service API.</p>
-                      
+                      <br>
                       <a href="https://national-park-finder.vercel.app/" class="btn btn-primary">Visit Website</a>
                       </div>
                     </div>
@@ -210,10 +209,37 @@
           src="https://code.jquery.com/jquery-3.2.1.min.js"
           integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
           crossorigin="anonymous"></script>
+        
           <!-- <script>
-            $(".flip-card").on("touchstart", function() {
-              $(this).toggleClass("hover");
+          $(document).on('click', '.flip-card', function(){
+            $(this).find('.flip-card-inner').addClass('flipped').mouseleave(function(){
+              $(this).removeClass('flipped');
             });
-          </script> -->
+            return false;
+          });
+          $(document).on('click', 'a', function(evt) {
+            var e = evt || window.event;
+            var clickedOn = (e.currentTarget) ? e.currentTarget : e.srcElement;
+            e.stopPropagation();
+            window.location.href = clickedOn.href;
+          });</script> -->
+          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+          <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!-- 
+<script>
+  $(".btn").on("touchstart", function() {
+    $(this).toggleClass("hover");
+  });
+</script> -->
+<!-- <script>
+  $(".flip-card").on("touchstart", function() {
+    $(this).toggleClass("hover");
+  });
+</script> -->
+<script>
+  $(".flip-card").on("touchstart", function() {
+    $(this).toggleClass("hover");
+  });
+</script>
   </body>
   </html>
