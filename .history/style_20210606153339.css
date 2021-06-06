@@ -245,13 +245,13 @@ img.image-enhanced {
 }
 
 /**************** projects ****************/
-.card p {
+.flip-card p {
   font-size: 14px;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.card img {
+.flip-card img {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -261,7 +261,7 @@ img.image-enhanced {
   margin-bottom: 20px;
 }
 
-.card #card2 {
+.flip-card #card2 {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -273,7 +273,7 @@ img.image-enhanced {
   border: transparent;
 }
 
-.card #card2:hover {
+.flip-card #card2:hover {
   font-size: 30px;
   color: black;
   display: block;
@@ -284,7 +284,7 @@ img.image-enhanced {
   background-blend-mode: hue;
 }
 
-.card .btn {
+.flip-card .btn {
   background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background-size: 500%;
@@ -351,7 +351,7 @@ img.image-enhanced {
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.card {
+.flip-card {
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
   border: solid;
@@ -365,7 +365,7 @@ img.image-enhanced {
 }
 
 /* This container is needed to position the front and back side */
-.card-inner {
+.flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
@@ -383,12 +383,12 @@ img.image-enhanced {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-/* .card:hover .card-inner {
+/* .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
 
-.card.hover .card-inner {
+.flip-card.hover .flip-card-inner {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 } */

@@ -245,46 +245,44 @@ img.image-enhanced {
 }
 
 /**************** projects ****************/
-.card p {
+/* @media (pointer: course) and (hover: none) {
+  .flip-card-inner {
+    font-size: inherit;
+  }
+} */
+
+.flip-card .btn {
+  color: white;
+  text-shadow: -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+@supports((text-stroke: 2px black) or (-webkit-text-stroke: 2px black)) {
+  .flip-card .btn {
+      color: transparent;
+      -webkit-text-stroke: 2px black;
+  text-stroke: 2px black;
+      text-shadow: none;
+  }
+}
+/* .flip-card .btn  {
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;  font-weight: bold;
+  font-size: 50px;
+  text-transform: uppercase;
+  color: rgba(0,168, 255, 0.5);
+  text-shadow: 8px 8px 0 rgba(255, 0, 180, 0.5);
+} */
+
+.flip-card p {
   font-size: 14px;
   padding-left: 4px;
   padding-right: 4px;
 }
 
-.card img {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-  border-radius: 10px;
-  margin-bottom: 20px;
-}
-
-.card #card2 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card2:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card .btn {
+/* .flip-card .btn {
   background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background-size: 500%;
@@ -300,9 +298,9 @@ img.image-enhanced {
   position: absolute;
   bottom: 20px;
   left: 35px;
-}
+} */
 
-.btn:hover {
+/* .btn:hover {
   animation-name: gradient;
   -webkit-animation-name: gradient;
   animation-duration: 2s;
@@ -322,7 +320,7 @@ img.image-enhanced {
   -webkit-animation-iteration-count: 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-}
+} */
 
 @keyframes gradient {
   0% {
@@ -332,17 +330,36 @@ img.image-enhanced {
   }
 }
 
+/* @-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50% 100%;
+    background-position: 100%;
+    
+  }
+} */
+
 .card-container {
   max-width: 1200px;
   min-width: 370px;
   margin: auto;
+  /* margin-bottom: 10px;
+  margin-top: 20px; */
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  /* border: solid; */
   text-align: center;
   padding-top: 10px;
 }
+
+/* .card-body {
+  position: relative;
+  text-align: center;
+  border: solid;
+  border-color: white;
+  border-radius: 10px;
+} */
 
 .row-one {
   justify-content: space-evenly;
@@ -350,10 +367,30 @@ img.image-enhanced {
   flex-wrap: wrap;
 }
 
+
+/* .card-one {
+  background-image: url(./images/brews.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+} */
+
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
-.card {
+
+.flip-card {
+  /* -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: rbga(0, 0, 0, 0); */
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   border: solid;
   border-color: transparent;
   background-color: transparent;
@@ -365,7 +402,8 @@ img.image-enhanced {
 }
 
 /* This container is needed to position the front and back side */
-.card-inner {
+.flip-card-inner {
+  /* -webkit-touch-callout: none; */
   position: relative;
   width: 100%;
   height: 100%;
@@ -383,12 +421,12 @@ img.image-enhanced {
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-/* .card:hover .card-inner {
+/* .flip-card:hover .flip-card-inner {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 }
 
-.card.hover .card-inner {
+.flip-card.hover .flip-card-inner {
   transform: rotateY(180deg);
   -webkit-transform: rotateY(180deg);
 } */
@@ -399,7 +437,7 @@ img.image-enhanced {
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   border-radius: 10px;
   margin-bottom: 20px;
 }
@@ -416,6 +454,16 @@ img.image-enhanced {
   -webkit-backface-visibility: hidden;
 }
 
+/* Style the back side */
+.card-one-back {
+  background-color: #fefcf0;
+  color: #112a46;
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
 .card-two-front, .card-two-back {
   position: absolute;
   width: 100%;
@@ -424,22 +472,32 @@ img.image-enhanced {
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
-  }
+  
+}
 
 /* Style the front side (fallback if image is missing) */
 .card-two-front {
-  background-image: url(./images/books.jpg);
+  background-image: url(./images/books.jpg
+  );
   opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
-  }
+  
+}
+
+/* Style the back side */
+.card-two-back {
+  background-color: #fefcf0;
+  color: #112a46;
+  transform: rotateY(180deg);
+}
 
 .card-three-front, .card-three-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -452,13 +510,21 @@ img.image-enhanced {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
-  }
+  
+}
+
+/* Style the back side */
+.card-three-back {
+  background-color: #fefcf0;
+  color: #112a46;
+  transform: rotateY(180deg);
+}
 
 .card-four-front, .card-four-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -470,14 +536,22 @@ img.image-enhanced {
   opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
-  background-position: left; 
+  background-position: left;
+  
+}
+
+/* Style the back side */
+.card-four-back {
+  background-color: #fefcf0;
+  color: #112a46;
+  transform: rotateY(180deg);
 }
 
 .card-five-front, .card-five-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -490,13 +564,21 @@ img.image-enhanced {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
+  
+}
+
+/* Style the back side */
+.card-five-back {
+  background-color: #fefcf0;
+  color: #112a46;
+  transform: rotateY(180deg);
 }
 
 .card-six-front, .card-six-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -509,13 +591,21 @@ img.image-enhanced {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
+  
+}
+
+/* Style the back side */
+.card-six-back {
+  background-color: #fefcf0;
+  color: #112a46;
+  transform: rotateY(180deg);
 }
 
 .card-seven-front, .card-seven-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -528,13 +618,21 @@ img.image-enhanced {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
+  
+}
+
+/* Style the back side */
+.card-seven-back {
+  background-color: #fefcf0;
+  color: #112a46;
+  transform: rotateY(180deg);
 }
 
 .card-eight-front, .card-eight-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
@@ -547,7 +645,139 @@ img.image-enhanced {
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
+  
 }
+
+/* Style the back side */
+.card-eight-back {
+  background-color: #fefcf0;
+  color: #112a46;
+  transform: rotateY(180deg);
+}
+
+
+/* .card-two {
+  background-image: url(./images/books.png);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.card-three {
+  background-image: url(./images/makeup.png);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: bottom;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+.card-four{
+  background-image: url(./images/cart.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: bottom;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: black;
+}
+
+
+.card-five {
+  background-image: url(./images/host.png);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+
+.card-six {
+  background-image: url(./images/leaf.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+.card-seven {
+  background-image: url(./images/note.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: top;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+
+.card-eight {
+  background-image: url(./images/parks.jpg);
+  opacity: .85;
+  background-repeat: no-repeat;
+  background-size:cover;
+  background-position: center;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+  max-width: 15rem;
+  height: 20rem;
+  border: transparent;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: white;
+} */
+
 
 /* ************** Resume *************** */
 .resume-pdf {
