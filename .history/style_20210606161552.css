@@ -294,144 +294,6 @@ img.image-enhanced {
   background-blend-mode: hue;
 }
 
-.card #card3 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card3:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card4 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card4:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card5 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card5:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card6 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card6:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card7 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card7:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card8 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card8:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
 /* .card .btn {
   background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
@@ -482,6 +344,8 @@ img.image-enhanced {
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .card {
+  /* backface-visibility: hidden;
+  -webkit-backface-visibility: hidden; */
   border: solid;
   border-color: transparent;
   background-color: transparent;

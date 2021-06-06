@@ -86,6 +86,14 @@ h3 {
   font-weight: 430;
 }
 
+h4 {
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
@@ -213,25 +221,6 @@ img.image-enhanced {
 }
 
 /**************** projects ****************/
-
-.card-container {
-  max-width: 1200px;
-  min-width: 370px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  text-align: center;
-  padding-top: 10px;
-}
-
-.row-one {
-  justify-content: space-evenly;
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .card p {
   font-size: 14px;
   padding-left: 4px;
@@ -246,29 +235,6 @@ img.image-enhanced {
   -webkit-backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
-}
-
-.card #card1 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card1:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
 }
 
 .card #card2 {
@@ -294,145 +260,7 @@ img.image-enhanced {
   background-blend-mode: hue;
 }
 
-.card #card3 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card3:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card4 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card4:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card5 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card5:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card6 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card6:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card7 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card7:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-.card #card8 {
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: top;
-  display: block;
-  margin: 0 auto;
-  text-indent: -9999px;
-  width: 15rem;
-  height: 20rem;
-  border: transparent;
-}
-
-.card #card8:hover {
-  font-size: 30px;
-  color: black;
-  display: block;
-  margin: 0 auto;
-  text-indent: 0;
-  justify-content: center;
-  background-color: rgb(238, 228, 211, .5);
-  background-blend-mode: hue;
-}
-
-/* .card .btn {
+.card .btn {
   background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
   background-size: 500%;
@@ -448,7 +276,7 @@ img.image-enhanced {
   position: absolute;
   bottom: 20px;
   left: 35px;
-} */
+}
 
 /* .btn:hover {
   animation-name: gradient;
@@ -461,7 +289,7 @@ img.image-enhanced {
   -webkit-animation-fill-mode: forwards;
 } */
 
-/* .btn.hover {
+.btn.hover {
   animation-name: gradient;
   -webkit-animation-name: gradient;
   animation-duration: 2s;
@@ -470,18 +298,38 @@ img.image-enhanced {
   -webkit-animation-iteration-count: 1;
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
-} */
+}
 
-/* @keyframes gradient {
+@keyframes gradient {
   0% {
     background-position: 0% 50% 100%;
     background-position: 100%;
     
   }
-} */
+}
+
+.card-container {
+  max-width: 1200px;
+  min-width: 370px;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  text-align: center;
+  padding-top: 10px;
+}
+
+.row-one {
+  justify-content: space-evenly;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .card {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border: solid;
   border-color: transparent;
   background-color: transparent;
@@ -522,24 +370,40 @@ img.image-enhanced {
 } */
 
 /* Position the front and back side */
-.card-one-front {
+.card-one-front, .card-one-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-one-front {
   background-color: #bbb;
   background-image: url(./images/beer.jpg);
   opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 
-.card-two-front {
+.card-two-front, .card-two-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+  }
+
+/* Style the front side (fallback if image is missing) */
+.card-two-front {
   background-image: url(./images/books.jpg);
   opacity: .85;
   background-repeat: no-repeat;
@@ -547,38 +411,56 @@ img.image-enhanced {
   background-position: top;
   }
 
-.card-three-front {
+.card-three-front, .card-three-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-three-front {
   background-image: url(./images/makeup.jpg);
   opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
-}
+  }
 
-.card-four-front {
+.card-four-front, .card-four-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-four-front {
   background-image: url(./images/computer.jpg);
   opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
-  background-position: left;
+  background-position: left; 
 }
 
-.card-five-front {
+.card-five-front, .card-five-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-five-front {
   background-image: url(./images/trebek.jpg);
   opacity: .85;
   background-repeat: no-repeat;
@@ -586,12 +468,18 @@ img.image-enhanced {
   background-position: top;
 }
 
-.card-six-front {
+.card-six-front, .card-six-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-six-front {
   background-image: url(./images/leaf.jpg);
   opacity: .85;
   background-repeat: no-repeat;
@@ -599,12 +487,18 @@ img.image-enhanced {
   background-position: top;
 }
 
-.card-seven-front {
+.card-seven-front, .card-seven-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-seven-front {
   background-image: url(./images/note.jpg);
   opacity: .85;
   background-repeat: no-repeat;
@@ -612,12 +506,18 @@ img.image-enhanced {
   background-position: top;
 }
 
-.card-eight-front {
+.card-eight-front, .card-eight-back {
   position: absolute;
+  width: 100%;
+  height: 100%;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   border-radius: 10px;
   margin-bottom: 20px;
+}
+
+/* Style the front side (fallback if image is missing) */
+.card-eight-front {
   background-image: url(./images/parks.jpg);
   opacity: .85;
   background-repeat: no-repeat;
@@ -636,6 +536,8 @@ img.image-enhanced {
 .resume-container {
   max-width: 100%;
   height: 100%;
+  /* border: solid;
+  border-color: yellow; */
   align-items: center; 
   justify-content: center;
   display: flex;
@@ -650,10 +552,13 @@ img.image-enhanced {
   flex-wrap: wrap;
   height: 100%;
   width: 100%;
+  /* border: solid;
+  border-color: lightgreen; */
   padding: 5px;
   margin: auto;
   align-items: center;
   align-content: center;
+  
 }
 
 .contact-form {
@@ -693,6 +598,8 @@ img.image-enhanced {
   margin-top: 20px;
 }
 /****** Contact Form Design ******/
+
+
 form input, form textarea {
   width: 100%;
   margin-bottom: 20px;
