@@ -473,7 +473,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/books.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -486,7 +486,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/makeup.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -499,7 +499,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/computer.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: left;
@@ -512,7 +512,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/trebek.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -525,7 +525,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/leaf.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -538,7 +538,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/note.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -551,7 +551,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/parks.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;

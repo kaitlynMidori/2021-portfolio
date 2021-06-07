@@ -213,6 +213,7 @@ img.image-enhanced {
 }
 
 /**************** projects ****************/
+
 .card-container {
   max-width: 1200px;
   min-width: 370px;
@@ -237,6 +238,64 @@ img.image-enhanced {
   padding-right: 4px;
 }
 
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* .card .btn {
+  background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background-size: 500%;
+  color: white;
+  border: none;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  letter-spacing: .05em;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+  width: 10rem;
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+}
+
+.btn:hover {
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.btn.hover {
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50% 100%;
+    background-position: 100%;
+    
+  }
+} */
+
 .card #card1 {
   background-repeat: no-repeat;
   background-size:cover;
@@ -251,7 +310,7 @@ img.image-enhanced {
 
 .card #card1:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -274,7 +333,7 @@ img.image-enhanced {
 
 .card #card2:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -297,7 +356,7 @@ img.image-enhanced {
 
 .card #card3:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -320,7 +379,7 @@ img.image-enhanced {
 
 .card #card4:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -343,7 +402,7 @@ img.image-enhanced {
 
 .card #card5:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -366,7 +425,7 @@ img.image-enhanced {
 
 .card #card6:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -389,7 +448,7 @@ img.image-enhanced {
 
 .card #card7:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -412,7 +471,7 @@ img.image-enhanced {
 
 .card #card8:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -420,6 +479,54 @@ img.image-enhanced {
   background-color: rgb(238, 228, 211, .5);
   background-blend-mode: hue;
 }
+
+/* .card .btn {
+  background: -webkit-linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background: linear-gradient(to right, #a2ccb6 0%, #fceeb5 50%, #ee786e 100%);
+  background-size: 500%;
+  color: white;
+  border: none;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+  letter-spacing: .05em;
+  border-radius: 10px;
+  padding: 5px;
+  font-weight: bold;
+  font-size: 1.3em;
+  width: 10rem;
+  position: absolute;
+  bottom: 20px;
+  left: 35px;
+}
+
+.btn:hover {
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+.btn.hover {
+  animation-name: gradient;
+  -webkit-animation-name: gradient;
+  animation-duration: 2s;
+  -webkit-animation-duration: s;
+  animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50% 100%;
+    background-position: 100%;
+    
+  }
+} */
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .card {
@@ -460,7 +567,7 @@ img.image-enhanced {
   margin-bottom: 20px;
   background-color: #bbb;
   background-image: url(./images/beer.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -473,7 +580,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/books.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -486,7 +593,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/makeup.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -499,7 +606,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/computer.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: left;
@@ -512,7 +619,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/trebek.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -525,7 +632,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/leaf.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -538,7 +645,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/note.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -551,7 +658,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/parks.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;

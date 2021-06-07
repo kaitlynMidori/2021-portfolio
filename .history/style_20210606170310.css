@@ -213,6 +213,7 @@ img.image-enhanced {
 }
 
 /**************** projects ****************/
+
 .card-container {
   max-width: 1200px;
   min-width: 370px;
@@ -235,6 +236,20 @@ img.image-enhanced {
   font-size: 14px;
   padding-left: 4px;
   padding-right: 4px;
+}
+
+#card a {
+  border: solid blue;
+}
+
+.card img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
 }
 
 .card #card1 {
@@ -274,7 +289,7 @@ img.image-enhanced {
 
 .card #card2:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -297,7 +312,7 @@ img.image-enhanced {
 
 .card #card3:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -320,7 +335,7 @@ img.image-enhanced {
 
 .card #card4:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -343,7 +358,7 @@ img.image-enhanced {
 
 .card #card5:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -366,7 +381,7 @@ img.image-enhanced {
 
 .card #card6:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -389,7 +404,7 @@ img.image-enhanced {
 
 .card #card7:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -412,7 +427,7 @@ img.image-enhanced {
 
 .card #card8:hover {
   font-size: 30px;
-  color: #001219;
+  color: black;
   display: block;
   margin: 0 auto;
   text-indent: 0;
@@ -460,7 +475,7 @@ img.image-enhanced {
   margin-bottom: 20px;
   background-color: #bbb;
   background-image: url(./images/beer.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -473,7 +488,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/books.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -486,7 +501,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/makeup.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -499,7 +514,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/computer.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: left;
@@ -512,7 +527,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/trebek.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -525,7 +540,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/leaf.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -538,7 +553,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/note.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
@@ -551,7 +566,7 @@ img.image-enhanced {
   border-radius: 10px;
   margin-bottom: 20px;
   background-image: url(./images/parks.jpg);
-  opacity: .8;
+  opacity: .85;
   background-repeat: no-repeat;
   background-size:cover;
   background-position: top;
